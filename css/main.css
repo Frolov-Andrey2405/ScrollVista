@@ -120,3 +120,14 @@ video.frame-media_right {
 video.frame-media_left {
 	right: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
 }
+
+/*Define text alignment styles for right and left positions*/
+.text-right > * {
+	position: relative;
+	left: 18vw;
+}
+
+.text-left > * {
+	position: relative;
+	right: 18vw;
+}
