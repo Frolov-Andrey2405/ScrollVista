@@ -23,6 +23,9 @@ window.onscroll = function() {
 
 }
 
+/*Set initial scroll position to hide address bar*/
+window.scrollTo(0, 1)
+
 /*Implement audio controls for sound button*/
 let soundButton = document.querySelector('.soundbutton'),
 		audio = document.querySelector('.audio')
@@ -32,12 +35,12 @@ soundButton.addEventListener('click', e => {
 	audio.paused ? audio.play() : audio.pause()
 })
 
-/*Pause audio on window blur*/
-window.onblur = function() {
-	audio.pause()
-}
-
 /*Continue playing audio on window focus*/
 window.onfocus = function() {
 	soundButton.classList.contains('paused') ? audio.pause() : audio.play()
+}
+
+/*Pause audio on window blur*/
+window.onblur = function() {
+	audio.pause()
 }
