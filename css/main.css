@@ -14,3 +14,11 @@
 	--depth: 4000px;
 	--transition: .75s cubic-bezier(.075, .5, 0, 1);
 }
+
+/*Hide the scrollbar in both Firefox and Safari/Chrome*/
+body {
+	scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar { 
+	display: none; /* Safari and Chrome */
+}
