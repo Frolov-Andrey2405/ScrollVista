@@ -84,3 +84,21 @@ h1, h2, h3, h4 {
 	text-align: center;
 	font-size: calc(var(--index) * 3.3);
 }
+
+/*Define frame media styles*/
+.frame-media {
+	position: relative;
+	width: calc(var(--index) * var(--side-small));
+	height: calc(var(--index) * var(--side-big));
+	background-position: center;
+	background-size: cover;
+}
+
+.frame-media_left {
+	right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+
+.frame-media_right {
+	left: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+
