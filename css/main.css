@@ -58,3 +58,16 @@ body {
 	transform-style: preserve-3d;
 	height: 100%;
 }
+
+/*Define frame styles*/
+.frame {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: var(--transition), opacity .75s ease;
+	will-change: transform;
+	transform-style: preserve-3d;
+}
