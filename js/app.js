@@ -31,3 +31,8 @@ soundButton.addEventListener('click', e => {
 	soundButton.classList.toggle('paused')
 	audio.paused ? audio.play() : audio.pause()
 })
+
+/*Pause audio on window blur*/
+window.onblur = function() {
+	audio.pause()
+}
