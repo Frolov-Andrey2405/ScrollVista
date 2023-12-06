@@ -102,3 +102,7 @@ h1, h2, h3, h4 {
 	left: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
 }
 
+/*Define frame background style*/
+.frame_bg {
+	background-color: rgb(0 0 0 / .87);
+}
