@@ -131,3 +131,8 @@ video.frame-media_left {
 	position: relative;
 	right: 18vw;
 }
+
+/*Define additional heading styles*/
+.frame h3 {
+	font-size: calc(var(--index) * 3);
+}
