@@ -22,3 +22,26 @@ body {
 body::-webkit-scrollbar { 
 	display: none; /* Safari and Chrome */
 }
+
+/*Define font faces and body styles*/
+@font-face {
+	font-family: raleway_c;
+	src: url(assets/fonts/raleway-v22-cyrillic-300.woff2);
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: raleway_c;
+	src: url(assets/fonts/raleway-v22-cyrillic-100.woff2);
+	font-weight: 100;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-size: calc(var(--index) * .8);
+	font-family: raleway_c, sans-serif;
+	line-height: 1.75;
+	height: var(--depth);
+	font-weight: 300;
+}
