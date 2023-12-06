@@ -136,3 +136,9 @@ video.frame-media_left {
 .frame h3 {
 	font-size: calc(var(--index) * 3);
 }
+
+/*Define paragraph styles*/
+.frame p {
+	max-width: 30vw;
+	margin-top: 3vh;
+}
